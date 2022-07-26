@@ -3,16 +3,14 @@ import java.util.Scanner;
 import java.io.*;
 
 public class Read {
-    public static void main(String[] args) throws Exception {
+    public static void get_differences(Scanner csv1, Scanner csv3) throws IOException {
 
         // An ArrayList named compare contaning string is created
         ArrayList<String> compare = new ArrayList<String>();
         //The result is stored in compare.csv file in " " format
         String result = "";
         // scanner is created for sample_file_1.csv
-        Scanner csv1 = new Scanner(new File("./src/sample_file_1.csv"));
-        // scanner is created for sample_file_31.csv
-        Scanner csv3 = new Scanner(new File("./src/sample_file_3.csv"));
+
         //use comma to slice the csv file
         csv1.useDelimiter(",");
         csv3.useDelimiter(",");
@@ -49,6 +47,13 @@ public class Read {
         fw.write(result);
         //close compare.csv file
         fw.close();
+    }
+    public static void main(String[] args) throws Exception{
+        //scanner is created for sample_file_1.csv
+        Scanner csv1 = new Scanner(new File("./scrc/sample_file_1.csv"));
+        Scanner csv3 = new Scanner(new File("./src/sample_file_3.csv"));
+
+        get_differences(csv1,csv3);
     }
 }
 
