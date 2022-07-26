@@ -50,7 +50,7 @@ public class Read {
     }
     public static void main(String[] args) throws Exception{
         //scanner is created for sample_file_1.csv
-        Scanner csv1 = new Scanner(new File("./scrc/sample_file_1.csv"));
+        Scanner csv1 = new Scanner(new File("./src/sample_file_1.csv"));
         Scanner csv3 = new Scanner(new File("./src/sample_file_3.csv"));
 
         get_differences(csv1,csv3);
