@@ -49,7 +49,7 @@ public class Read {
         fw.close();
     }
     public static void main(String[] args) throws Exception{
-        //scanner is created for sample_file_1.csv
+        //scanner is created for sample_file_1.csv amd used
         Scanner csv1 = new Scanner(new File("./src/sample_file_1.csv"));
         Scanner csv3 = new Scanner(new File("./src/sample_file_3.csv"));
 
