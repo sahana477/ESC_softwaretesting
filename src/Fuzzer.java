@@ -16,7 +16,7 @@ public class Fuzzer {
     }
 
     //This test takes in csv files which are converted to pdf as the input
-    //The contents are not equal in the file generated and expected csv file compared to pdf
+    //The contents are not equal in the file generated and expected csv converted to pdf
     @Test
     public void test1() throws IOException {
         Scanner csv1 = new Scanner(new File("./src/sample_file_1.pdf"));
