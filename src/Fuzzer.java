@@ -23,7 +23,7 @@ public class Fuzzer {
         Scanner csv3 = new Scanner(new File("./src/sample_file_3.pdf"));
         Read.get_differences(csv1, csv3);
         File file1 = new File("./src/compare.csv");
-        File file2 = new File("./src/sample_file_2.pdf");
+        File file2 = new File("./src/compare_saved.pdf");
         Assert.assertEquals(FileUtils.contentEquals(file1, file2), false);
     }
     //This test takes in csv files which are converted to pdf as the input
@@ -37,7 +37,7 @@ public class Fuzzer {
         Scanner csv3 = new Scanner(new File("./src/sample_file_3.pdf"));
         Read.get_differences(csv1, csv3);
         File file1 = new File("./src/compare.csv");
-        File file2 = new File("./src/test4_result");
+        File file2 = new File("./src/compare_saved.pdf");
         Assert.assertEquals(FileUtils.contentEquals(file1, file2), false);
     }
 
@@ -50,7 +50,7 @@ public class Fuzzer {
         Scanner csv3 = new Scanner(new File("./src/sample_file_3.xlsx"));
         Read.get_differences(csv1, csv3);
         File file1 = new File("./src/compare.csv");
-        File file2 = new File("./src/sample_file_2.xlsx");
+        File file2 = new File("./src/compare_saved.xlsx");
         Assert.assertEquals(FileUtils.contentEquals(file1, file2), false);
     }
 
