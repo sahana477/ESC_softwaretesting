@@ -37,13 +37,13 @@ public class Fuzzer {
         Scanner csv3 = new Scanner(new File("./src/sample_file_3.pdf"));
         Read.get_differences(csv1, csv3);
         File file1 = new File("./src/compare.csv");
-        File file2 = new File("./src/compare_saved.pdf");
+        File file2 = new File("./src/test4_result");
         Assert.assertEquals(FileUtils.contentEquals(file1, file2), false);
     }
 
 
-    //This test takes in csv files which are converted to pdf as the input
-    //The contents are not equal in the file generated and expected csv file compared to xlsx
+    //This test takes in csv files which are converted to excel as the input
+    //The contents are not equal in the file generated and expected csv file converted to xlsx
     @Test
     public void test3() throws IOException {
         Scanner csv1 = new Scanner(new File("./src/sample_file_1.xlsx"));
@@ -55,9 +55,9 @@ public class Fuzzer {
     }
 
     //This test takes in csv files which are converted to excel files as the input
-    //The contents are not equal in the file generated and an empty test4_result csv file
+    //The contents are equal in the file generated and an empty test4_result csv file
     // An empty test file is generated
-    // The program runs sucessfully generating only an empty test file with the conten because excel files are seperated bycommas
+    // The program runs sucessfully generating only an empty test file  because excel files are seperated by commas
 
 
     @Test
