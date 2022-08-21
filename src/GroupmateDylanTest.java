@@ -19,7 +19,7 @@ public class GroupmateDylanTest {
     public GroupmateDylanTest() {
     }
 
-    // pass in empty hashmaps into function
+    // pass in empty hashmaps into function as the input
     //A an empty csv file is created which is same as empty csv file
     @Test
     public void test1() throws IOException {
